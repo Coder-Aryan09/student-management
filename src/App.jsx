@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/loginPage.jsx';
 import StudentDashboard from './components/studentDashboard.jsx';
 import TeacherDashboard from './components/teacherDashboard.jsx';
@@ -44,7 +44,7 @@ const PublicRoute = ({ children }) => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         {/* Public Routes */}
         <Route 
@@ -183,7 +183,7 @@ const App = () => {
         {/* 404 Catch-all */}
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
-    </BrowserRouter>
+  </Router>
   );
 };
 
