@@ -1,8 +1,8 @@
 {
   "name": "frontend",
+  "homepage": "https://Coder-Aryan09.github.io/student-management/",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Coder-Aryan09.github.io/student-management",
   "type": "module",
   "scripts": {
     "dev": "vite",
